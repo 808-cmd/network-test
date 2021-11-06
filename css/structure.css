@@ -1,0 +1,47 @@
+header,
+nav,
+.links,
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header{
+    justify-content: space-around;
+}
+
+nav,
+.links,
+.button{
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+.login{
+    display: none;
+}
+
+.sub-menu i:hover ~.sub{
+    display: flex;
+}
+
+.vector{
+    margin: 10% 20%;
+    background-color: blanchedalmond;
+}
+
+img{
+    width: 100%;
+}

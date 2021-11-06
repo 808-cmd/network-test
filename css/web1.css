@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #212121;
+    font-size: clamp(1.2rem,2vw,1.5rem);
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav div .button{
+    margin-left: 20px;
+}
+
+.circle{
+    display: none;
+    background-color: antiquewhite;
+    height: clamp(1.2rem,2vw,1.5rem);
+    width: clamp(1.2rem,2vw,1.5rem);
+    margin: 10px;
+}
+
+li,
+h3{
+    margin: 10px;
+    padding: 0px 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-flex;
+}
+
+.button li{
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:550px) {
+    .circle{
+        display: flex;
+    }
+
+    nav div{
+        display: none;
+    }
+
+}
+
+.circle:hover ~div{
+    display: flex;
+    position: absolute;
+}
+
